@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMPN 26 Kota Tangerang - Beranda</title>
+  <style>
+    :root{
+      --navy:#0b3a5a; /* deep blue like sample */
+      --accent:#1f6fb2; /* brighter blue */
+      --gold:#d6b24a;
+      --muted:#f3f5f7;
+      --text:#1f2d3a;
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;color:var(--text);background:var(--muted)}
+    /* Header / Nav */
+    header{background:white;border-bottom:4px solid #efefef}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:54px}
+    .brand h1{font-size:20px;margin:0;color:var(--navy)}
+    nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
+    nav a{color:var(--navy);text-decoration:none;font-weight:600}
+    /* Hero */
+    .hero{position:relative}
+    .hero .hero-image{width:100%;height:420px;object-fit:cover;display:block}
+    .hero .overlay{position:absolute;left:6%;top:24%;color:white;max-width:520px}
+    .hero h2{font-size:42px;margin:0 0 10px;font-weight:700;line-height:1.05;text-shadow:0 6px 18px rgba(0,0,0,0.45)}
+    .hero p{margin:0 0 18px;max-width:420px;text-shadow:0 4px 12px rgba(0,0,0,0.35)}
+    .cta-row{display:flex;gap:14px;margin-top:8px}
+    .btn{background:var(--accent);color:white;padding:12px 18px;border:none;border-radius:4px;text-decoration:none;font-weight:700}
+    .btn.ghost{background:transparent;color:white;border:2px solid rgba(255,255,255,0.15)}
+    /* Features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;padding:44px 0}
+    .card{background:white;padding:14px;border-radius:6px;box-shadow:0 6px 18px rgba(20,30,40,0.06);text-align:center}
+    .card img{width:100%;height:150px;object-fit:cover;border-radius:4px}
+    .card h3{margin:12px 0 6px;font-size:16px;color:var(--navy)}
+    .card a{color:var(--accent);text-decoration:none;font-weight:600}
+    /* About + image */
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;padding:40px 0}
+    .about img{width:100%;border-radius:6px}
+    .about h3{color:var(--navy);font-size:26px}
+    .quote{background:white;padding:28px;border-radius:6px;text-align:center;box-shadow:0 6px 18px rgba(20,30,40,0.04)}
+    .quote p{font-style:italic;margin:0;color:var(--navy)}
+    /* News strip */
+    .news{padding:36px 0}
+    .news-list{display:flex;gap:14px}
+    .news-item{background:white;padding:18px;border-radius:6px;flex:1}
+    .news-item h4{margin:0 0 8px}
+    .news-item p{margin:0;color:#666;font-size:14px}
+    /* Footer */
+    footer{background:var(--navy);color:white;padding:36px 0;margin-top:20px}
+    .footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+    .contact small{opacity:0.85}
+    /* Responsive */
+    @media(max-width:900px){
+      .features{grid-template-columns:1fr}
+      .about{grid-template-columns:1fr}
+      .hero .overlay{left:4%;top:18%}
+      .hero .hero-image{height:360px}
+      nav ul{display:none}
+      .brand h1{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <img src="C:\Users\MM-02\Pictures\Saved Pictures\logo smp.jpg" alt="Logo SMPN 26" />
+        <div>
+          <h1>SMPN 26 Kota Tangerang</h1>
+          <div style="font-size:12px;color:#7b8da0">Sekolah Menengah Pertama Negeri</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#akademik">Akademik</a></li>
+          <li><a href="#kegiatan">Kegiatan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-image" src="C:\Users\MM-02\Pictures\Saved Pictures\esempe.jpeg" alt="Siswa SMPN 26" />
+    <div class="overlay container">
+      <h2>Keunggulan, Prestasi, dan Kebersamaan</h2>
+      <p>SMPN 26 Kota Tangerang — membentuk generasi berkarakter, berprestasi, dan siap bersaing.</p>
+      <div class="cta-row">
+        <a class="btn" href="#pendaftaran">Daftar</a>
+        <a class="btn ghost" href="#visi">Detail Sekolah</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- Feature cards -->
+    <section class="features" aria-label="fitur">
+      <div class="card">
+        <img src="C:\Users\MM-02\Pictures\Saved Pictures\gedung smp.jpg" alt="Who we are" />
+        <h3>Siapa Kami</h3>
+        <p>Profil sekolah, visi & misi serta sejarah singkat SMPN 26.</p>
+        <a href="#about">Pelajari</a>
+      </div>
+      <div class="card">
+        <img src="C:\Users\MM-02\Pictures\Saved Pictures\prestasi.jpg" alt="Academics" />
+        <h3>Akademik</h3>
+        <p>Kurikulum, ekstrakurikuler, dan prestasi akademik siswa kami.</p>
+        <a href="#akademik">Pelajari</a>
+      </div>
+      <div class="card">
+        <img src="C:\Users\MM-02\Pictures\Saved Pictures\pensi.jpg" alt="Community" />
+        <h3>Kegiatan</h3>
+        <p>Agenda sekolah, lomba, dan kegiatan ekstrakurikuler.</p>
+        <a href="#kegiatan">Lihat Kegiatan</a>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about">
+      <div>
+        <img src="C:\Users\MM-02\Pictures\Saved Pictures\smp.jpeg" alt="Siswa berjalan" />
+      </div>
+      <div>
+        <h3>Who We Are — SMPN 26 Kota Tangerang</h3>
+        <p>SMPN 26 adalah sekolah negeri yang berdedikasi memberikan pendidikan bermutu, berkarakter, dan berprestasi. Kami membangun kolaborasi antara sekolah, orang tua, dan masyarakat untuk mencetak siswa yang siap menghadapi tantangan masa depan.</p>
+        <p><strong>Visi:</strong> "Terwujudnya Peserta Didik yang Berakhlak Mulia, Berprestasi, dan Berkarakter"</p>
+        <p><strong>Misi:</strong>
+        <ul>
+          <li>Melaksanakan pembelajaran secara efektif dan efisien.</li>
+          <li>Mengembangkan kurikulum berbasis karakter dan teknologi.</li>
+          <li>Menciptakan lingkungan sekolah yang kondusif untuk belajar dan mengajar.</li>
+          <li>Menyelenggarakan kegiatan ekstrakurikuler yang beragam untuk mengembangkan potensi siswa.</li>
+          <li>Menanamkan nilai-nilai keagamaan dan budi pekerti luhur kepada peserta didik.</li>
+          <li>Mendorong prestasi akademik dan non-akademik siswa.</li>
+        </ul>
+        </p>
+        <div style="margin-top:12px">
+          <a class="btn" href="#kontak">Hubungi Sekolah</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section style="padding:18px 0">
+      <div class="quote">
+        <p>"SMPN 26 adalah tempat di mana siswa dipersiapkan bukan hanya untuk sukses di sekolah menengah atas, tetapi juga menjadi manusia berakhlak dan berwawasan."</p>
+        <small>— Kepala Sekolah</small>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="kegiatan" class="news">
+      <h3 style="color:var(--navy)">Berita & Pengumuman</h3>
+      <div class="news-list">
+        <div class="news-item">
+          <h4>Pengumuman Kelulusan</h4>
+          <p>Hasil belajar dan informasi kelulusan untuk tahun ajaran saat ini.</p>
+        </div>
+        <div class="news-item">
+          <h4>Open House</h4>
+          <p>Kunjungi sekolah kami pada tanggal 10 Desember untuk melihat fasilitas dan program.</p>
+        </div>
+        <div class="news-item">
+          <h4>Lomba Sains</h4>
+          <p>Siswa-siswa kami meraih prestasi di ajang lomba sains tingkat kota.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / map -->
+    <section id="kontak" style="padding:26px 0">
+      <div style="display:grid;grid-template-columns:1fr 300px;gap:20px">
+        <div class="card">
+          <h3>Kontak</h3>
+          <p>Alamat: Jl. T.B. Hasanuddin, RT.007/RW.005, Poris Jaya, Kec. Batuceper, Kota Tangerang, Banten 15122</p>
+          <p>Telepon: +62 812 2000 1409</p>
+          <p>Instagram: @smpn26tangerangofficial </p>
+        </div>
+        <div class="card">
+          <h3>Jam Kerja</h3>
+          <p>Senin - Jumat: 07.00 - 15.00</p>
+          <p>Sabtu: 08.00 - 12.00</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>SMPN 26 Kota Tangerang</h4>
+          <p class="contact"><small>Jl. T.B. Hasanuddin, RT.007/RW.005, Poris Jaya, Kec. Batuceper, Kota Tangerang, Banten 15122<br/>Telp: +62 812 2000 1409 • Email: info@smpn26-tangerang.sch.id</small></p>
+        </div>
+        <div>
+          <h4>Link Cepat</h4>
+          <ul style="list-style:none;padding:0;margin:0">
+            <li><a href="#" style="color:white;text-decoration:none">Pendaftaran</a></li>
+            <li><a href="#" style="color:white;text-decoration:none">Kalender Akademik</a></li>
+            <li><a href="#" style="color:white;text-decoration:none">Galeri</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tentang</h4>
+          <p style="max-width:320px">Sekolah Negeri yang berkomitmen mencetak generasi berprestasi dan berkarakter di Kota Tangerang.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:18px;opacity:0.9">&copy; SMPN 26 Kota Tangerang — Semua hak cipta dilindungi</div>
+    </div>
+  </footer>
+</body>
+</html>
